@@ -1,0 +1,246 @@
+.page_hading_bredcrumb {
+    padding-left: 14px;
+}
+
+.page_hading_bredcrumb {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.page_hading_bredcrumb,
+.breadcrumb_bg li,
+.page_hading_bredcrumb h2,
+.module_title,
+.permission_title {
+
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.permission_title .role_p {
+    margin-bottom: 12px;
+}
+
+.permission_title .role_p:last-child  {
+    margin-bottom: 0px;
+}
+
+
+.role_p > label {
+    cursor: pointer;
+}
+/* 
+tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+.breadcrumb_bg {
+    background: transparent !important;
+    padding-left: 0px !important;
+    font-size: 20px;
+}
+
+.page_hading_bredcrumb h2 {
+    margin-bottom: -10px;
+}
+
+.breadcrumb_bg li {
+    font-size: 16px !important;
+}
+
+/* Select2 CSS
+------------------------------ */
+.select2_states {
+    width: 100%;
+    min-height: 35px !important;
+}
+
+.table,
+button {
+    color: #6f767e;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+body {
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 400;
+}
+
+
+.action_td {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(130.57deg, #392C7D -0.48%, #314CAD 71.79%);
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.action_icon {
+    color: #392c7d;
+    margin-right: 8px;
+}
+
+.action_button {
+    width: max-content;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 108%;
+    right: 45%;
+    display: none;
+}
+
+.action_button_item li > button {
+    width: 100%;
+    display: block;
+    padding: 8px 25px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.action_button > .card-body {
+    padding: 0;
+}
+
+.btn {
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+/* / Create Role page / */
+
+.role_p > label {
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.role_p > input[type=checkbox], 
+.role_p > input[type=radio] {
+
+    padding: 11px;
+    width: 18px;
+    height: 18px;
+}
+
+.role_title {
+    font-size: 16px;
+}
+
+.role_th {
+    font-size: 18px;
+}
+
+
+
+#page-topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1002;
+    background-color: #fff;
+    -webkit-box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+    box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+    /* / display: none;  / */
+}
+
+.vertical-menu {
+    width: 250px;
+    z-index: 1001;
+    background: #fff;
+    bottom: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 70px;
+    -webkit-box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+    box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+    /* / display: none;  / */
+}
+
+.staff_input {
+    height: 36px;
+    width: 100%;
+}
+
+
+/* / NICE SLECET PLUGGIN / */
+.nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11) !important;
+    /* / border: 1px solid #888; / */
+    width: 100%;
+
+}
+
+.error {
+    width: 100%;
+    display: block;
+}
+
+
+.label_name {
+    font-size: 16px;
+    color: #33383f;
+    font-weight: 400;
+}
+
+.inputs {
+    height: 48px;
+    font-size: 14px;
+    color: #242424;
+    /* / border: 1px solid #eaeaea; / */
+}
+
+.inputs::placeholder {
+    color: #ced4da;
+}
+
+.inputs:focus-visible, .inputs:focus {
+    box-shadow: 0 0 10px rgba(10,175,255,.35);
+    border: 1px solid #392c7d!important;
+    outline: none;
+}
+
+thead > tr > th {
+    color: #242424;
+}
+
+.badge_status_act {
+    background: rgb(41,214,151,.1);
+    color: #29d697;
+    padding: 5px 22px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.badge_status_inact {
+    background: rgba(247, 14, 14, 0.1);
+    color: rgb(245, 53, 53);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#incomeAndexpenseData_length{
+    display: none;
+}
+

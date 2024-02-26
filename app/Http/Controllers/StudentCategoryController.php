@@ -1,0 +1,82 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\StudentCategory;
+use Illuminate\Http\Request;
+use App\Http\Requests\CategoryStoreRequest;
+use Illuminate\Support\Facades\Validator;
+use App\Services\StudentCategoryService;
+
+
+class StudentCategoryController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public $response = [];
+
+    public function index(Request $request)
+    {
+        if($request->ajax()){
+            $studentCategoryService= new StudentCategoryService();
+            return ($studentCategoryService -> index());
+                      
+          }
+        return view('dashboard.student_info.studentCategory.index');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return view('dashboard.student_info.studentCategory.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(CategoryStoreRequest $request)
+    {
+
+        $validateData = $request->validated();
+        $studentCategoryService= new StudentCategoryService();
+        return $studentCategoryService -> create($request);    
+ 
+    }
+
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(StudentCategory $studentCategory)
+    {
+        return view('dashboard.student_info.studentCategory.edit', [
+
+            'categories' => $studentCategory,
+          
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(CategoryStoreRequest $request, StudentCategory $studentCategory)
+    {
+
+        $validateData = $request->validated();
+        $studentCategoryService= new StudentCategoryService();
+        return $studentCategoryService -> update($request, $studentCategory); 
+
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(StudentCategory $studentCategory)
+    {
+        $studentCategoryService= new StudentCategoryService();
+        return $studentCategoryService -> destroy($studentCategory); 
+    }
+}
